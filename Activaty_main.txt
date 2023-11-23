@@ -1,0 +1,69 @@
+package com.example.ajouter;
+
+MVP
+MVVP
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.Serializable;
+import java.util.HashMap;
+
+public class Screen extends AppCompatActivity {
+    TextView  textView1, textView2, textView3, textView4 ;
+    @SuppressLint("SetTextI18n")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        textView1 =findViewById(R.id.textView2);
+        textView2 =findViewById(R.id.textView7);
+        textView3 =findViewById(R.id.textView8);
+        textView4 =findViewById(R.id.textView9);
+        Intent i = getIntent();
+        Serializable s= getIntent().getSerializableExtra("data");
+        if (s != null) {
+            HashMap data = (HashMap) s;
+            textView1.setText("task"+data.get("task"));
+            textView2.setText("data_debut"+data.get("data_debut"));
+            textView3.setText("data_fin"+data.get("data_fin"));
+            textView4.setText("time_debut"+data.get("time_debut"));
+        }
+    }}
+======
+ String name ; 
+    String anne ;
+    int image;
+
+    public MyAdapdare(String name, String anne, int image) {
+        this.name = name;
+        this.anne = anne;
+        this.image = image;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAnne() {
+        return anne;
+    }
+
+    public void setAnne(String anne) {
+        this.anne = anne;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
+    }

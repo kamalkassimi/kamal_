@@ -1,0 +1,307 @@
+act4////
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="147dp"
+        android:text="formation"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="122dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="512dp"
+        android:text="Task"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="119dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:text="data_debut"
+        android:textSize="20dp"
+        android:padding="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="205dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="448dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="380dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="126dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="384dp"
+        android:text="data_fin"
+        android:textSize="20dp"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDate2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="68dp"
+        android:text="valid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="151dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate2"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="114dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="154dp"
+        android:text="time_debut"
+        android:textSize="20dp"
+        android:padding="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="114dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="87dp"
+        android:text="Priorite"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:padding="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="212dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+toolbar////
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:elevation="4dp">
+
+</androidx.appcompat.widget.Toolbar>
+maiact4/////
+package com.example.ajouter;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+
+import java.io.Serializable;
+import java.util.HashMap;
+
+public class MainActivity3 extends AppCompatActivity {
+    EditText task,data_debut,data_fin,time_debut;
+    Button btn;
+    @Override
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main4);
+        task = findViewById(R.id.editTextName);
+        data_debut= findViewById(R.id.editTextDate);
+        data_fin = findViewById(R.id.editTextDate2);
+        time_debut = findViewById(R.id.editTextTime);
+        btn = findViewById(R.id.btn);
+        Spinner spin = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.country_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spin.setAdapter(adapter);
+        HashMap<String,String> data = new HashMap<>();
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity3.this,Screen.class);
+                data p = new data(task.getText().toString(),data_debut.getText().toString(),
+                        data_fin.getText().toString(),time_debut.getText().toString(),spin.toString());
+//                data.put("task",task.getText().toString());
+//                data.put("data_debut",data_debut.getText().toString());
+//                data.put("data_fin",data_fin.getText().toString());
+//                data.put("time_debut",time_debut.getText().toString());
+//                data.put("spin",spin.toString());
+                intent.putExtra("data", (Serializable) p);
+                startActivity(intent);
+            }
+        });
+    }
+}
+data////
+package com.example.ajouter;
+
+public class data  {
+
+    private  String task;
+    private  String data_debut;
+    private  String data_fin ;
+    private  String time;
+    private String option ;
+    public  data (String task , String data_debut , String data_fin , String  time , String option)
+    {
+        this.task = task;
+        this.data_debut= data_debut;
+        this.data_fin= data_fin;
+        this.time = time ;
+         this.option = option ;
+
+    }
+
+    public String getData_debut() {
+        return data_debut;
+    }
+
+    public void setData_debut(String data_debut) {
+        this.data_debut = data_debut;
+    }
+
+    public void setTask(String task) {
+        this.task = task;
+    }
+
+    public void setData_fin(String data_fin) {
+        this.data_fin = data_fin;
+    }
+
+    public void setOption(String option) {
+        this.option = option;
+    }
+
+    public String getData_fin() {
+        return data_fin;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getOption() {
+        return option;
+    }
+
+    public String getTask() {
+        return task;
+    }
+
+    public String getTime() {
+        return time;
+    }
+}
+
+
