@@ -1,7 +1,6 @@
 package com.example.ajouter;
 
-MVP
-MVVP
+
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
